@@ -10,7 +10,7 @@
     ├───openoffice.png
     └───run.jpg
 ├───README.md
-├───word2xml.py
+├───word2dita.py
 └───XSLs
     ├───db2dita
     └───ditaWriter
@@ -81,7 +81,7 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
 # 操作步骤 
 1. 下载下列文件并放置在同一个路径下：  
 
-    - Python脚本 `word2xml.py`
+    - Python脚本 `word2dita.py`
     - 文件夹 `XSLs`
 
 2. 将Word文档转换为Docbook格式。  
@@ -90,15 +90,15 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
 
 3. 将Dockbook文档转换为XML格式。  
     
-    用文本编辑器 `Notepad++` 打开第2步保存的Docbook文档，删除 `<article>`标签以外的信息，将`<article>` 标签及以内的信息保存在`word2xml.py`所在路径，命名为 `input.xml`。    
+    用文本编辑器 `Notepad++` 打开第2步保存的Docbook文档，删除 `<article>`标签以外的信息，将`<article>` 标签及以内的信息保存在`word2dita.py`所在路径，命名为 `input.xml`。    
 
-4. 使用脚本`word2xml.py`，将`input.xml`转换成 DITA格式的文档。  
+4. 使用脚本`word2dita.py`，将`input.xml`转换成 DITA格式的文档。  
 
     (1) 打开 `Command Prompt`，用`cd` + `<filepath>` 进入脚本所在路径。  
 
     (2) 在脚本所在路径，输入以下命令运行脚本，将在同一路径下生成名为 `output.dita` 的文件：
 
-    > python word2xml.py 
+    > python word2dita.py 
 
     示例如下：  
     ![运行脚本](/example-image/run.jpg)

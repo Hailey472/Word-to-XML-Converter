@@ -41,7 +41,8 @@ Word文档是常见的技术文档之一，但Word文档通常是非结构化的
 
 - Windows 操作系统  
 - Python 3.6 或更高版本  
-开发者使用的是Python 3.9.4 https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe  
+开发者使用的是Python 3.9.4 
+https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe  
 - Java开发工具包 OpenJDK  
 - Apache OpenOffice  
 - lxml 库
@@ -68,9 +69,10 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
 3. 点击 `OK`， 确认退出。  
 
 - ## 安装 `lxml` 库  
-打开 `Command Prompt`，输入如下命令：  
 
-> pip install lxml  
+    打开 `Command Prompt`，输入如下命令：  
+
+    > pip install lxml  
     
 # 操作步骤 
 1. 下载下列文件并放置在同一个路径下：  
@@ -86,7 +88,7 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
     
     用文本编辑器 `Notepad++` 打开第(1)步保存的Docbook文档，删除 `<article>`标签以外的信息，将`<article>` 标签及以内的信息保存在`word2xml.py`所在路径，命名为 `input.xml`。    
 
-4. 使用脚本，基于`input.xml`生成 DITA 文档。  
+4. 使用脚本`word2xml.py`，将`input.xml`转换成 DITA格式的文档。  
 
     (1) 打开 `Command Prompt`，用`cd` + `<filepath>` 进入脚本所在路径。  
 

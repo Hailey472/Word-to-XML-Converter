@@ -4,8 +4,17 @@
 
 此方案可将Word(.doc)格式的文档转换为可编辑的XML(.xml)格式的文档。  
 
-# 目录结构  
-
+# 目录结构    
+```
+├───example-image
+    ├───openoffice.png
+    └───run.jpg
+├───README.md
+├───word2xml.py
+└───XSLs
+    ├───db2dita
+    └───ditaWriter
+```
 # 内容列表  
 - [功能概述](#功能概述)
 - [目录结构](#目录结构)

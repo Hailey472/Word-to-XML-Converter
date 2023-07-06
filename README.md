@@ -32,7 +32,7 @@ Word文档是常见的技术文档之一，但Word文档通常是非结构化的
 
 - Windows 操作系统  
 - Python 3.6 或更高版本  
-开发者使用的是Python 3.9.4。 https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe  
+开发者使用的是Python 3.9.4 https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe  
 - Java开发工具包 OpenJDK  
 - Apache OpenOffice  
 - lxml 库
@@ -54,6 +54,7 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
 
 2. 在`Options>OpenOffice` 界面中，点击 `Java>Java options`，勾选 `Use a Java runtime environment`, 确认已安装Java运行时的环境。如下图：  
 
+![open-office](/example-image/openoffice.png)
 
 3. 点击 `OK`， 确认退出。  
 
@@ -85,6 +86,7 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
     > python word2xml.py 
 
     示例如下：  
+    ![run](/example-image/run.jpg)
 
 
     

@@ -1,8 +1,8 @@
-# Word转XML格式
+# Word转DITA格式
 
 # 功能概述  
 
-此方案可将Word(.doc)格式的文档转换为可编辑的XML(.xml)格式的文档。  
+此文档可以将Word(.docx)文档转换成以XML标记语言为基础的DITA(.dita)文档。    
 
 # 目录结构    
 ```
@@ -23,15 +23,20 @@
 - [环境要求](#环境要求)
 - [准备条件](#准备条件)
 - [操作步骤](#操作步骤)
-- [效果说明](#效果说明)
 - [技术支持](#技术支持)
 - [贡献方式](#贡献方式)
 - [开源协议](#开源协议)  
 
 # 背景说明
-Word文档是常见的技术文档之一，但Word文档通常是非结构化的，其内部的内容和样式信息不易被机器读取和处理，也不便于文档的管理、重用和自动化处理。  
 
-为了解决这些问题，我们开发了这个`Word to XML Converter`方案，旨在将Word文档转换为XML格式，以便于使用XML编辑器进行文档的进一步编辑、管理和自动化处理。
+Word文档是常见的技术文档格式之一，但Word文档通常是非结构化的，其内部的内容和样式信息不易被机器读取和处理，也不便于文档的管理、重用和自动化处理。  
+为了解决这些问题，我们开发了这个`Word to DITA Converter`方案，旨在将Word文档转换为DITA(.dita)文档，以便于使用DITA 编辑器进行文档的进一步编辑、管理和自动化处理。  
+
+DITA 是基于 XML 的一种特定领域标准，用于创建和管理结构化文档。将文档转换为DITA格式有如下优势：  
+- 内容组织与管理更规范
+- 内容重用和共享更便捷
+- 自动化处理成为可能
+- 多平台访问不再受限
 
 # 转换流程
 
@@ -43,11 +48,10 @@ Word文档是常见的技术文档之一，但Word文档通常是非结构化的
 - Python 3.6 或更高版本  
 开发者使用的是Python 3.9.4 
 https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe  
-- Java开发工具包 OpenJDK  
-- Apache OpenOffice  
-- lxml 库
+
 
 # 准备条件
+
 - ## 安装 `Apache OpenOffice`
 >**注意**： 此方案须安装win 32-bit (x86) (EXE)版本。  
 
@@ -55,7 +59,7 @@ https://www.openoffice.org/download/index.html
 
 - ## 安装Java开发工具包 `OpenJDK`  
 
-> **注意**：此方案须安装32-bits版本。
+>**注意**：此方案须安装32-bits版本。
 
 https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jdk_x86-32_windows_hotspot_8u282b08.msi
 
@@ -86,7 +90,7 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
 
 3. 将Dockbook文档转换为XML格式。  
     
-    用文本编辑器 `Notepad++` 打开第(1)步保存的Docbook文档，删除 `<article>`标签以外的信息，将`<article>` 标签及以内的信息保存在`word2xml.py`所在路径，命名为 `input.xml`。    
+    用文本编辑器 `Notepad++` 打开第2步保存的Docbook文档，删除 `<article>`标签以外的信息，将`<article>` 标签及以内的信息保存在`word2xml.py`所在路径，命名为 `input.xml`。    
 
 4. 使用脚本`word2xml.py`，将`input.xml`转换成 DITA格式的文档。  
 
@@ -97,24 +101,17 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
     > python word2xml.py 
 
     示例如下：  
-    ![run](/example-image/run.jpg)
-
-
+    ![运行脚本](/example-image/run.jpg)
     
-    生成的 `output.dita`文件可在XML编辑器（`DITA CSM` 或`Oxygen XML Editor`）中打开和编辑。  
 
 
-# 效果说明  
-本方案可以帮助用户将现有的Word文档转换为更适合于XML编辑器中编辑和管理的格式，实现以下优势：
+ 
+    生成的 `output.dita`文件可在DITA编辑器（如Oxygen XML Editor）中打开和编辑。  
 
-- **内容组织与管理更规范**：转换为XML后，文档内容将以一种更结构化和层次化的方式呈现，使得内容的组织和管理更加灵活和规范。
-- **内容重用和共享更便捷**：XML格式的文档更容易被拆分可重用的模块，显著减少重复工作、提高文档的一致性，并促进团队之间的内容共享和协作。  
-- **自动化处理成为可能**：通过将文档转换为XML，可以使用各种XML处理工具和技术来自动提取、转换、验证和发布文档内容，提高工作效率。  
-- **多平台访问不再受限**： 转换为XML格式后，文档可以在各种XML编辑器、内容管理系统（CMS）、翻译工具之间进行无缝交互和共享。  
 
 ## 技术支持
 
--   邮箱：hui.wang@sigmatechnology.com
+-   邮箱：xiaoguang.huang@sigmatechnology.com
 
 ## 贡献方式
 

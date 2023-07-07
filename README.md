@@ -23,7 +23,6 @@
 - [环境要求](#环境要求)
 - [准备条件](#准备条件)
 - [操作步骤](#操作步骤)
-- [技术支持](#技术支持)
 - [贡献方式](#贡献方式)
 - [开源协议](#开源协议)  
 
@@ -104,18 +103,13 @@ https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08
     ![运行脚本](/example-image/run.jpg)
     
 
-
- 
     生成的 `output.dita`文件可在DITA编辑器（如Oxygen XML Editor）中打开和编辑。  
 
-
-## 技术支持
-
--   邮箱：xiaoguang.huang@sigmatechnology.com
 
 ## 贡献方式
 
 非常欢迎你的加入！你可以通过提一个issue 或 pull request的方式来共同开发。
 
 ## 开源协议
+遵循MIT协议。
 
